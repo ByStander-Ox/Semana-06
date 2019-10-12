@@ -17,26 +17,36 @@ article {
 
 
 section{
-    display:flex;
+    
     width: 800px;
     height: 800px;
-    background-color: springgreen;
+     background-color: springgreen;
+
+    display:flex;
+   
     /*  flex-direction: row; /* row (por defecto) | row-reverse | column | column-reverse */
-    justify-content: flex-start; /* normal (por defecto) | center | space-between | space-around | flex-end | flex-start */ 
+
+    justify-content: normal; /* normal (por defecto) | center | space-between | space-around | flex-end | flex-start */ 
+
     /*  flex-wrap: no-wrap; /* no-wrap (por defecto) | wrap | wrap-reverse | */
 
 
-    flex-flow: row nowrap;/*Union de propiedades(flex-direction | flex-wrap)*/
-    align-items: baseline /* normal (por defecto) | center | flex-start | flex-end | stretch(cuando no se asigna el height) | baseline | */
+    flex-flow: row nowrap;/*Union de Propiedades (flex-direction | flex-wrap)*/
+
+   /* align-items: baseline; /*En el eje secundario(una linea): normal (por defecto) | center | flex-start | flex-end | strecht(cuando no se asigna el height) | baseline | */
+
+    align-content: center; /* En el eje secundario(+ de una linea): normal (por defecto) | center | flex-start | flex-end | space between | space around | stretch */
 }
 
 section :nth-child(1){
     order: 1;
+    align-self: stretch; /* auto (por defecto) | center | flex-start | flex-end | stretcht */
+    height: auto;
 }
 section :nth-child(2){
     order: -1;
     font-size: 48px;
-    align-items: baseline;
+    
 }
 
 

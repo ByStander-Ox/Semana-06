@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+            <meta charset="UTF-8"> 
+            <title> Ejemplo  </title>
+<style>
+/* Position: Pocisionamiento de elementos con respecto a su posición inicial*/
+
+body {
+
+display: flex;
+
+}
+
+
+article{
+
+    width: 150px;
+    height: 150px;
+    background-color: deeppink;
+    color: white;
+    font-size: 28px;
+
+
+}
+
+body :nth-child(2){
+    border: 3px dashed springgreen;
+    position: relative;
+    /* top | right | bottom | left */
+    bottom: 10px;
+    left: 10px;
+
+}
+
+</style>
+    </head>
+
+<body>
+
+<article>1</article>
+<article>2</article>
+
+
+</body>
